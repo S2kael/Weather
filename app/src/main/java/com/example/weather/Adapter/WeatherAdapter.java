@@ -14,6 +14,7 @@ import com.example.weather.R;
 import com.example.weather.Unity.Weather;
 import com.squareup.picasso.Picasso;
 
+import java.security.Timestamp;
 import java.text.Format;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -59,8 +60,9 @@ public class WeatherAdapter extends BaseAdapter {
         Weather weather = list.get(i);
 
         //Time
-        Date date = new Date(weather.getDatetime());
-        @SuppressLint("SimpleDateFormat") Format format = new SimpleDateFormat("E, yyyy-MM-dd");
+        Date date = new Date(weather.getDatetime()*1000);
+        SimpleDateFormat format = new SimpleDateFormat("EEEE, yyyy-MM-dd");
+        //txtDateTime.setText(String.valueOf(weather.getDatetime()));
         txtDateTime.setText(format.format(date));
 
         //Weather

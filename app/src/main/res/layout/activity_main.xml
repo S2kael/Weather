@@ -153,9 +153,9 @@
         android:textAlignment="center" />
 
     <Button
-        android:id="@+id/btnNext"
+        android:id="@+id/btnForecast"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="handleNextClick"
-        android:text="@string/next_day" />
+        android:onClick="handleForecastClick"
+        android:text="@string/forecast" />
 </LinearLayout>

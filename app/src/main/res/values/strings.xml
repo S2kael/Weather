@@ -20,7 +20,7 @@
     <string name="humidity_image">Humidity Image</string>
     <string name="condition_image">Condition Image</string>
     <string name="date_time">Date Time</string>
-    <string name="next_day">Next Day</string>
+    <string name="forecast">Forecast</string>
     <string name="city_name">City name</string>
     <string name="back">Back</string>
 </resources>

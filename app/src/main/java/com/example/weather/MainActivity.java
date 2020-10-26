@@ -4,9 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.net.Uri;
 import android.os.Bundle;
 import android.text.format.DateFormat;
 import android.util.Log;
@@ -29,10 +26,6 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.net.HttpURLConnection;
-import java.net.URL;
 import java.util.Calendar;
 import java.util.Date;
 
@@ -45,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
 
     //Button
     private Button btnSearch;
-    private Button btnNext;
+    private Button btnForecast;
 
     //ImageView
     private ImageView imgWeather;
@@ -188,7 +181,7 @@ public class MainActivity extends AppCompatActivity {
 
         //Button
         btnSearch = findViewById(R.id.btnSearch);
-        btnNext = findViewById(R.id.btnNext);
+        btnForecast = findViewById(R.id.btnForecast);
 
         //ImageView
         imgWeather = findViewById(R.id.imgWeather);
@@ -207,7 +200,7 @@ public class MainActivity extends AppCompatActivity {
         txtDateTime = findViewById(R.id.txtDateTime);
     }
 
-    public void handleNextClick(View view){
+    public void handleForecastClick(View view){
         Intent intent = new Intent(MainActivity.this, ForecastActivity.class);
         intent.putExtra("lon", lon);
         intent.putExtra("lat", lat);
