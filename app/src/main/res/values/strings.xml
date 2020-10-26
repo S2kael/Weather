@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Weather</string>
+    <string name="city_state">City, State</string>
+    <string name="search">Search</string>
+    <string name="city_loading">City: Loading…</string>
+    <string name="city">City: %s</string>
+    <string name="country_loading">Country: Loading…</string>
+    <string name="country">Country: %s</string>
+    <string name="temperature_loading">…\u2103</string>
+    <string name="temperature">%.2f\u2103</string>
+    <string name="weather">Weather</string>
+    <string name="humidity_loading">… %</string>
+    <string name="humidity">%.2f%%</string>
+    <string name="cloud_loading">… %</string>
+    <string name="cloud">%.2f%%</string>
+    <string name="wind_loading">… m/s</string>
+    <string name="wind">%.2f m/s</string>
+    <string name="wind_image">Wind Image</string>
+    <string name="cloud_image">Cloud Image</string>
+    <string name="humidity_image">Humidity Image</string>
+    <string name="condition_image">Condition Image</string>
+    <string name="date_time">Date Time</string>
+    <string name="next_day">Next Day</string>
+    <string name="city_name">City name</string>
+    <string name="back">Back</string>
+</resources>

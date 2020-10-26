@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="12"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edtCityState"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="@string/city_state"
+            />
+
+        <Button
+            android:id="@+id/btnSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:onClick="handleSearchClick"
+            android:text="@string/search" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtCity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="10pt"
+        android:text="@string/city_loading" />
+
+    <TextView
+        android:id="@+id/txtCountry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="10pt"
+        android:text="@string/country_loading" />
+
+    <ImageView
+        android:id="@+id/imgWeather"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        tools:srcCompat="@tools:sample/avatars"
+        android:contentDescription="@string/condition_image" />
+
+    <TextView
+        android:id="@+id/txtTemperature"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="15pt"
+        android:text="@string/temperature_loading" />
+
+    <TextView
+        android:id="@+id/txtWeather"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="15pt"
+        android:text="@string/weather" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imgHumidity"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                tools:srcCompat="@tools:sample/avatars"
+                android:contentDescription="@string/humidity_image" />
+
+            <TextView
+                android:id="@+id/txtHumidity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="@string/humidity_loading" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imgCloud"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                tools:srcCompat="@tools:sample/avatars"
+                android:contentDescription="@string/cloud_image" />
+
+            <TextView
+                android:id="@+id/txtCloud"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="@string/cloud_loading" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imgWind"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                tools:srcCompat="@tools:sample/avatars"
+                android:contentDescription="@string/wind_image" />
+
+            <TextView
+                android:id="@+id/txtWind"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="@string/wind_loading" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtDateTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/date_time"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="handleNextClick"
+        android:text="@string/next_day" />
+</LinearLayout>
